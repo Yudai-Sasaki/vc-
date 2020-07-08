@@ -28,9 +28,8 @@ int getFeedNum(int cells[HEIGHT][WIDTH]) {
 
 //gameOver‚Ì‚Æ‚«‚Ìˆ—
 void gameOver() {
-	flash();
-	for (int sleep = 0; sleep < 1000000; sleep++) {
-		//flash()‚ğŠˆ‚©‚·‚½‚ß‚Éˆ—‚ğ’x‚ç‚¹‚é
+	for (int i = 0; i < 5; i++) {
+		flash();
 	}
 	erase();
 	int  x, y, w, h;
